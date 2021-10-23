@@ -1,0 +1,128 @@
+﻿
+<div id="pnlLoading" style="visibility: hidden;">
+    <div class="row no-gutters h-100">
+        <div class="col text-center mt-5">
+            <div class="col-xl-4 col-lg-7 col-md-8 col-sm-11 m-auto">
+                <div class="container">
+                    <div class="shadow-sm rounded bg-light p-3 text-left">
+                        Loading...
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="pnlStart" style="visibility: visible;">
+    <div class="row no-gutters">
+        <div class="col text-center mt-5">
+            <div class="col-xl-4 col-lg-7 col-md-8 col-sm-11 m-auto">
+                <div class="container">
+                    <div class="shadow-sm rounded bg-light p-3 text-left">
+                        <h4>Guess Nationality Game</h4>
+                        <hr />
+                        <p>
+                            start game comment.
+                        </p>
+                        <button class="btn btn-primary btn-block" onclick="start()">Start</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="pnlFinish" style="visibility: hidden;">
+    <div class="row no-gutters">
+        <div class="col text-center mt-5">
+            <div class="col-xl-4 col-lg-7 col-md-8 col-sm-11 m-auto">
+                <div class="container">
+                    <div class="shadow-sm rounded bg-light p-3 text-left">
+                        <h4>Guess Nationality Game</h4>
+                        <hr />
+                        <p>
+                            Your Score is <span id="endScore">0</span>
+                        </p>
+                        <button class="btn btn-primary btn-block" onclick="start()">Re-start</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="pnlGame" class="row no-gutters text-center h-100" style="visibility: hidden;">
+    <div class="col-4">
+        <div class="container h-100">
+            <div class="row h-50">
+                <div class="col p-2">
+                    <div id="Japanese" class="shadow-sm rounded h-100 drop-box">
+                        <h4>Japanese</h4>
+                        <hr />
+                        <div class="img-box"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row h-50">
+                <div class="col p-2">
+                    <div id="Chinese" class="shadow-sm rounded h-100 drop-box">
+                        <h4>Chinese</h4>
+                        <hr />
+                        <div class="img-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="container h-100 d-flex flex-column">
+            <div class="row">
+                <div class="col p-2">
+                    <h5>Drag person to the nationality</h5>
+                </div>
+            </div>
+            <div class="row flex-grow-1">
+                <div class="col p-2">
+                    <div id="boxPerson" class="person-box h-100 overflow-hidden">
+                        <img id="imgPerson" 
+                                src="" 
+                                data-id=""
+                                class="drag" draggable="true"
+                                alt="drag person to the nationality" style="top: 0px; display: inline-block;" />
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-left small">
+                    Person No. <span id="noPerson">1</span>/<span id="totalPerson">0</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col p-2">
+                    <div class="alert alert-success mb-0">
+                        Your Score: <span id="score">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="container h-100">
+            <div class="row h-50">
+                <div class="col p-2">
+                    <div id="Korean" class="shadow-sm rounded h-100 drop-box">
+                        <h4>Korean</h4>
+                        <hr />
+                        <div class="img-box"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row h-50">
+                <div class="col p-2">
+                    <div id="Thai" class="shadow-sm rounded h-100 drop-box">
+                        <h4>Thai</h4>
+                        <hr />
+                        <div class="img-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

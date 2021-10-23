@@ -1,0 +1,71 @@
+﻿html {
+    font-size: 16px;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    min-width: 400px;
+    min-height: 400px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    
+}
+#pnlLoading {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 105;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+}
+#pnlStart, #pnlFinish {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+
+.drop-box {
+    background-color: #f8f9fa;
+}
+    .drop-box.start {
+        border: 1px dashed #00ff00;
+    }
+    .drop-box.over {
+        background-color: #e6f7f4;
+    }
+
+.person-box {
+    overflow: hidden;
+}
+    .person-box img.drag {
+        width: 155px;
+        height: 155px;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        cursor: move;
+        position: relative;
+        top: 0px;
+    }
+
+.img-box {
+    display: inline-block;
+}
+    .img-box img {
+        width: 70px;
+        height: 70px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        position: relative;
+    }
